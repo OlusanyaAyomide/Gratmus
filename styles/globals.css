@@ -1,27 +1,25 @@
 @tailwind base;
 @tailwind components;
+
+
+
+:root{
+  @apply bg-white font-lato
+}
+
+.cont{
+  @apply px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16
+}
+
+.remove-cont{
+  @apply -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-12 xl:-mx-16
+}
+.base-text{
+  @apply text-grat-black text-sm
+}
+
+
+
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
