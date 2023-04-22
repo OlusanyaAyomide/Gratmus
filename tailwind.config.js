@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -16,12 +19,19 @@ module.exports = {
         "grat-green":"#0EA89BFF",
         "grat-black":"#171A1FFF",
         "grat-gray":"#BCC1CAFF",
-        "grat-white":"#DEE1E6FF"
+        "grat-white":"#DEE1E6FF",
+        "grat-light-green":"#ECFDFCFF",
+        "grat-pink":"#FF832B17"
+      },
+      screens:{
+        xs:"340px",
+        ...defaultTheme.screens
       },
       fontFamily:{
         lato:["Lato","sans-serif"],
-        sarabun:["Sarabun","sans-serif"]
-      }
+        sarabun:["Sarabun"],
+        roboto:["Roboto"]
+      },
     },
   },
   plugins: [],

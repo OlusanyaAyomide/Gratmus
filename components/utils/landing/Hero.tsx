@@ -1,0 +1,25 @@
+import { Typography } from '@/utils/landingK'
+import React from 'react'
+import GratButton from '../GratButton'
+import HeroView from "./HeroView"
+
+export default function Hero() {
+  return (
+    <div className='bg-grat-light-green justify-center relative z-20 min-h-screen flex flex-wrap md:flex-nowrap items-center cont'>
+        <div className='w-full md:pr-3 lg:px-16 mb-2 flex flex-col justify-center min-h-[70vh]'>
+            <span className='massive-text font-sarabun  text-grat-green'>About 16,780 new People <span className='text-grat-black'>Daily</span></span>
+            <p className='mt-2 lg:w-[500px] base-text'>{Typography.heroText}</p>
+            <div className='mt-3 flex'>
+                <GratButton text='join now'/>
+                <GratButton text='join now' type={2} className='ml-1 xs:ml-4'/>
+            </div>
+        </div>
+        <div>
+        <div className='mb-2 w-[360px] h-[360px]'>
+          <HeroView/>
+        </div>
+        </div>
+      
+    </div>
+  )
+}

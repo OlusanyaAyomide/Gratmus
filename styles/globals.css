@@ -11,14 +11,22 @@
   @apply px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16
 }
 
+.massive-text{
+  @apply text-3xl md:text-4xl lg:text-[46px] lg:leading-[68px]
+}
 .remove-cont{
   @apply -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-12 xl:-mx-16
 }
 .base-text{
   @apply text-grat-black text-sm
 }
+.toggler{
+  @apply bg-grat-black h-[4px] w-full inline-block
+}
 
-
+.section-header{
+  @apply lg:text-5xl md:text-4xl sm:text-3xl font-sarabun text-grat-black font-[500]
+}
 
 @tailwind utilities;
 

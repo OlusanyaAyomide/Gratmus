@@ -10,7 +10,7 @@ interface layoutinterface{
 
 export default function LayOut({children}:layoutinterface) {
   return (
-    <div className='min-h-[100vh] flex flex-col'>
+    <div className='min-h-[100vh] flex flex-col overflow-hidden max-w-[1400px] mx-auto'>
       <header>
         <div>
           <Header/>

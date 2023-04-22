@@ -4,7 +4,7 @@ import layOutReducer from "./layoutSlice"
 
 export const store = configureStore({
   reducer:{
-    race:layOutReducer,
+    layout:layOutReducer,
   }
 })
 

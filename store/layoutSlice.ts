@@ -2,20 +2,19 @@ import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "./interface";
 
 export interface layoutInterface{
-    count:number
+    navActive:boolean
 }
 
 const initialState:layoutInterface={
-    count:0
+    navActive:false
 }
 
 export const layoutSlice=createSlice({
     name:"layout",
     initialState,
     reducers:{
-        increase(state){
-            console.log("here")
-            state.count +=1
+        setNav(state){
+            state.navActive = !state.navActive
         }
     }  
 })

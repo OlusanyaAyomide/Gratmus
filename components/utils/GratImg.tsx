@@ -9,6 +9,6 @@ interface ImgInterface{
 
 export default function GratImg({src,className,piority=false}:ImgInterface){
   return (
-   <Image className={`${className?className:"h-fit w-fit"}`} alt='' src={src}/>
+   <Image className={`${className?className:"h-full w-full"}`} alt='' src={src}/>
   )
 }
