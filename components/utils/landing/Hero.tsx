@@ -9,9 +9,9 @@ export default function Hero() {
         <div className='w-full md:pr-3 lg:px-16 mb-2 flex flex-col justify-center min-h-[70vh]'>
             <span className='massive-text font-sarabun  text-grat-green'>About 16,780 new People <span className='text-grat-black'>Daily</span></span>
             <p className='mt-2 lg:w-[500px] base-text'>{Typography.heroText}</p>
-            <div className='mt-3 flex'>
+            <div className='mt-3 flex gap-x-3'>
                 <GratButton text='join now'/>
-                <GratButton text='join now' type={2} className='ml-1 xs:ml-4'/>
+                <GratButton text='join now' type={2} className='ml-1 xs:ml-4 px-[38px] sm:px-[46px] py-2 sm:py-3'/>
             </div>
         </div>
         <div>

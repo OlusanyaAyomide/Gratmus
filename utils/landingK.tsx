@@ -106,4 +106,112 @@ export const Typography={
     connectTextdb:"Also Meet New Friends",
     profileText:"Build A great Profile",
     ProfileTextsm:"Build a Professional Profile that attracts great people, customers, Companies and Hr",
+    TrendingText:"Find out what many people Are discussing"
 }
+
+export const Discussoptions=[
+    {
+        link:"",
+        icon:landingExporter.Business,
+        text:"Business Name",
+        desc1:"NICHE",
+        desc2:"Location"
+    },
+    {
+        link:"",
+        icon:landingExporter.Group2,
+        text:"Open Group",
+        desc1:"Name",
+        desc2:"Common Mind"
+    },
+    {
+        link:"",
+        icon:landingExporter.FreeLancer,
+        text:"Free Lancer",
+        desc1:"Skill",
+        desc2:"Jobs"
+    },
+    {
+        link:"",
+        icon:landingExporter.ShowRoom,
+        text:"Show Room",
+        desc1:"Project",
+        desc2:"Investor"
+    },
+]
+
+export const TagList =[
+    'Technology',"sales","Accountant","Project","Investors Are Greedy","New Job","Auditor","Dance Steps"
+]
+
+export const BlogList =[
+    {
+        image:landingExporter.Discuss1,
+        text1:"Blog Title",
+        text2:"Aliqua irure tempo lorem OCtat volup",
+        time:"Dec 22, 2022",
+        duration:"5 mins read"
+    },   
+    {
+        image:landingExporter.Discuss2,
+        text1:"Blog Title",
+        text2:"Aliqua irure tempo lorem OCtat volup",
+        time:"Dec 22, 2022",
+        duration:"5 mins read"
+    },
+    {
+        image:landingExporter.Discuss3,
+        text1:"Blog Title",
+        text2:"Aliqua irure tempo lorem OCtat volup",
+        time:"Dec 22, 2022",
+        duration:"5 mins read"
+    }     
+]
+
+
+export const ExploreArray =[
+    {
+        image:landingExporter.ExploreName,
+        text:"NAME",
+        number:"2,056,187 names",
+        style:"#ECFDFCFF"
+    },
+    {
+        image:landingExporter.ExploreGender,
+        text:"GENDER",
+        number:"3 Gender",
+        style:"bg-[#FFF6F0FF]"
+    },
+    {
+        image:landingExporter.ExploreLocation,
+        text:"LOCATION",
+        number:"5768 locations",
+        style:"bg-[#F6F1FDFF]"
+    },
+    {
+        image:landingExporter.ExploreGroup,
+        text:"GROUPS",
+        number:"245,468 Group",
+        style:"bg-[#FDF1FDFF]",
+    },
+    {
+        image:landingExporter.ExploreName,
+        text:"PAGES",
+        number:"341,680 pages",
+        style:"bg-[#fdfcf1]",
+    },
+    {
+        image:landingExporter.ExploreLocation,
+        text:"COMPANIES",
+        number:"12,000 Companies",
+        style:"bg-[#f2f1fd]",
+    },
+    {
+        image:landingExporter.ExploreGroup,
+        text:"FREELANCER",
+        number:"4,127,070 FreLancer",
+        style:"bg-[#f2f1fd]",
+    },
+
+//
+]

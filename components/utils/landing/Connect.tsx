@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeader from '../sectionHeader'
+import SectionHeader from '../SectionHeader'
 import { landingExporter } from '@/public/landing/image/landingExporter'
 import { Typography } from '@/utils/landingK'
 import GratButton from '../GratButton'

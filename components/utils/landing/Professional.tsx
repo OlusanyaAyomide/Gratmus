@@ -4,7 +4,7 @@ import { landingExporter } from '@/public/landing/image/landingExporter'
 import {Typography} from "@/utils/landingK"
 import GratButton from '../GratButton'
 import Link from 'next/link'
-import SectionHeader from '../sectionHeader'
+import SectionHeader from '../SectionHeader'
  
 export default function Professional() {
   return (

@@ -15,7 +15,7 @@ export default function GratButton({text,type=1,className}:buttonInterface) {
     )
   }  
   return(
-      <button className={`bg-white py-2 sm:py-3 border-grat-green border-2 rounded-[26px] px-[38px] sm:px-[46px]  text-grat-green hover:active:text-white hover:active:bg-grat-green whitespace-nowrap transition-all duration-300 ${className}`}>{text}</button>
+      <button className={`bg-white  border-grat-green border-2 rounded-[26px]   text-grat-green hover:active:text-white hover:active:bg-grat-green whitespace-nowrap transition-all duration-300 ${className?className:"px-[38px] sm:px-[46px] py-2 sm:py-3"}`}>{text}</button>
   
   )
 

@@ -21,7 +21,10 @@ module.exports = {
         "grat-gray":"#BCC1CAFF",
         "grat-white":"#DEE1E6FF",
         "grat-light-green":"#ECFDFCFF",
-        "grat-pink":"#FF832B17"
+        "grat-pink":"#FF832B17",
+        "grat-light":"#FAFAFBFF",
+        "grat-offwhite":"#F3F4F6FF",
+        "grat-thick":"#323842FF"
       },
       screens:{
         xs:"340px",

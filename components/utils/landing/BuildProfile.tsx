@@ -18,9 +18,10 @@ export default function BuildProfile() {
         <div className='bottom-0 left-44 absolute z-20 w-[270px] h-[352px]'>
           <GratImg src={landingExporter.Profile2}/>
         </div>
-        <div className='bottom-0 absolute left-20 w-[306px] z-10 h-[475px]'></div>
+        <div className='-bottom-16 absolute left-20 w-[306px] z-10 h-[475px]'>
+          <GratImg src={landingExporter.ProfileBg}/>
+        </div>
       </div>
-      
     </section>
   )
 }

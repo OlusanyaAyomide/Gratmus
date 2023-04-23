@@ -25,7 +25,7 @@
 }
 
 .section-header{
-  @apply lg:text-5xl md:text-4xl sm:text-3xl font-sarabun text-grat-black font-[500]
+  @apply lg:text-5xl md:text-4xl  text-xl sm:text-3xl font-sarabun text-grat-black font-[500]
 }
 
 @tailwind utilities;
