@@ -8,18 +8,19 @@ import Discuss from '@/components/utils/landing/Discuss'
 import Trending from '@/components/utils/landing/Trending'
 import Blog from '@/components/utils/landing/Blog'
 import Explore from '@/components/utils/landing/Explore'
+import SliderLayout from '@/components/utils/Layout.tsx/SliderLayout'
 
 export default function Home() {
   return (
-    <LayOut>
-      <Hero/>
-      <Explore/>
-      <Professional/>
-      <Connect/>
-      <BuildProfile/>
-      <Discuss/>
-      <Trending/>
-      <Blog/>
-    </LayOut>
+      <LayOut>
+        <Hero/>
+        <Explore/>
+        <Professional/>
+        <Connect/>
+        <BuildProfile/>
+        <Discuss/>
+        <Trending/>
+        <Blog/>
+      </LayOut>
   )
 }

@@ -6,6 +6,7 @@ import GratButton from '../GratButton'
 import ToggleButton from '../NavButton'
 import LandingMenu from '../landing/LandingMenu'
 import { useAppSelector } from '@/hooks/reduxhooks'
+import Link from 'next/link'
 
 export default function Header() {
   const {navActive} = useAppSelector((state=>state.layout))
@@ -30,7 +31,8 @@ export default function Header() {
           </div>
       </div>
       <div className='flex w-full  justify-end items-center'>
-            <button className=' hidden lg:block pr-3 border-r-2 py-2 text-lg border-grat-gray text-grat-green font-[500] transition-all duration-300 active:text-white active:bg-grat-green'>Join now</button>
+        <Link href={"/signup"}><button className=' hidden lg:block pr-3 border-r-2 py-2 text-lg border-grat-gray text-grat-green font-[500] transition-all duration-300 active:text-white active:bg-grat-green'>Join now</button>
+        </Link>
             <GratButton text='Sign in' className='ml-4 hidden xs:block' />
             <ToggleButton/>
         </div>

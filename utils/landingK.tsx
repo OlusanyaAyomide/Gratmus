@@ -1,4 +1,5 @@
 import { landingExporter } from "@/public/landing/image/landingExporter";
+import { SignUpResource } from "@/public/signup/signupExporter";
 
 export const navLinks=[
     {
@@ -106,7 +107,8 @@ export const Typography={
     connectTextdb:"Also Meet New Friends",
     profileText:"Build A great Profile",
     ProfileTextsm:"Build a Professional Profile that attracts great people, customers, Companies and Hr",
-    TrendingText:"Find out what many people Are discussing"
+    TrendingText:"Find out what many people Are discussing",
+    signUpText:"Check for further information on how to switch to professional mode on this platform after ceating an account in the link below"
 }
 
 export const Discussoptions=[
@@ -180,38 +182,56 @@ export const ExploreArray =[
         image:landingExporter.ExploreGender,
         text:"GENDER",
         number:"3 Gender",
-        style:"bg-[#FFF6F0FF]"
+        style:"#FFF6F0FF"
     },
     {
         image:landingExporter.ExploreLocation,
         text:"LOCATION",
         number:"5768 locations",
-        style:"bg-[#F6F1FDFF]"
+        style:"#F6F1FDFF"
     },
     {
         image:landingExporter.ExploreGroup,
         text:"GROUPS",
         number:"245,468 Group",
-        style:"bg-[#FDF1FDFF]",
+        style:"#FDF1FDFF",
     },
     {
         image:landingExporter.ExploreName,
         text:"PAGES",
         number:"341,680 pages",
-        style:"bg-[#fdfcf1]",
+        style:"#fdfcf1",
     },
     {
         image:landingExporter.ExploreLocation,
         text:"COMPANIES",
         number:"12,000 Companies",
-        style:"bg-[#f2f1fd]",
+        style:"#f2f1fd",
     },
     {
         image:landingExporter.ExploreGroup,
         text:"FREELANCER",
         number:"4,127,070 FreLancer",
-        style:"bg-[#f2f1fd]",
+        style:"#f2f1fd",
     },
 
-//
+]
+
+export const signUpfeatures=[
+    {
+        image:SignUpResource.People,
+        text:"people"
+    },
+    {
+        image:SignUpResource.Company,
+        text:"Company"
+    },
+    {
+        image:SignUpResource.Jobs,
+        text:"Jobs"
+    },
+    {
+        image:SignUpResource.FreeLancer,
+        text:"Freelancers"
+    },
 ]

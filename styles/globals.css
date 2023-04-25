@@ -5,6 +5,7 @@
 
 :root{
   @apply bg-white font-lato
+  
 }
 
 .cont{
@@ -23,9 +24,26 @@
 .toggler{
   @apply bg-grat-black h-[4px] w-full inline-block
 }
+.explore::-webkit-scrollbar{
+  display:none;
+}
+.label-text{
+  @apply block  font-semibold pl-3 text-[#424955FF] text-base
+}
+.input-1{
+  @apply outline-none px-4 rounded-[22px] bg-[#F3F4F6FF] py-2 text-[#BCC1CAFF] focus:text-[#54575c] mt-1
+}
+
+.form-header{
+  @apply text-center font-semibold text-2xl lg:text-3xl font-sarabun text-[#171A1FFF]
+}
 
 .section-header{
-  @apply lg:text-5xl md:text-4xl  text-xl sm:text-3xl font-sarabun text-grat-black font-[500]
+  @apply lg:text-5xl md:text-4xl  text-xl sm:text-3xl font-sarabun text-grat-black font-[500] 
+}
+
+.input-2{
+  @apply outline-none w-full text-[#BCC1CAFF] focus:text-[#54575c]  bg-transparent
 }
 
 @tailwind utilities;

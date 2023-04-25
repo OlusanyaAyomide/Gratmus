@@ -9,12 +9,12 @@ export default function Discuss() {
   return (
     <section className='cont mt-12'>
         <SectionHeader text='DICUSS MORE' ptext='Disuss with more People' pstyle='mt-3 mb-5'/>
-        <div className='flex flex-wrap justify-center mt-4'>
+        <div className='flex flex-wrap justify-center mt-4 xl:-mx-12'>
             {Discussoptions.map((item,key)=>{
                 return(
-                    <div key={key} className="mx-2 mb-6">
+                    <div key={key} className="mx-2 mb-6 ">
                         <Link href={item.link}>
-                            <button className='w-[276px] h-[222px] rounded-[4px] flex flex-col justify-center bg-grat-light'>
+                            <button className='w-[276px] lg:w-[220px] h-[222px] rounded-[4px] flex flex-col justify-center bg-grat-light'>
                                 <div className='mx-auto w-[60px] h-[60px]'>
                                     <GratImg src={item.icon}/>
                                 </div>

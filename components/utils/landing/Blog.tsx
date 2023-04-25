@@ -12,8 +12,8 @@ export default function Blog() {
       <div className='flex flex-wrap justify-center mt-6'>
         {BlogList.map((item,key)=>{
           return(
-            <div key={key} className='mx-3 xl:mx-1 w-[376px] mb-8 rounded-[10px] border border-grat-gray'>
-              <div className='rounded-tr-lg rounded-tl-lg w-full h-[256px] overflow-hidden'>
+            <div key={key} className='mx-3  xl:mx-1 w-[346px] lg:w-[300px] mb-8 rounded-[10px] border border-grat-gray'>
+              <div className='rounded-tr-lg rounded-tl-lg w-full h-[256px] lg:h-[220px] overflow-hidden'>
                 <GratImg src={item.image} piority={true}/>
               </div>
               <div className=' pb-4 px-3'>
