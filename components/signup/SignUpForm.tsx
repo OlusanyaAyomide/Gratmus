@@ -152,7 +152,7 @@ export default function SignUPForm() {
 
 
             <GratButton text='Sign Up' className='shadow-lg shadow-grat-green/30 w-full block mt-12'/>
-            <h1 className='mt-8 text-center base text'>Been here Before <span className='text-grat-green ml-2'><Link href={"/"}>Log in</Link></span></h1>
+            <h1 className='mt-8 text-center base text'>Been here Before <span className='text-grat-green ml-2'><Link href={"/login"}>Log in</Link></span></h1>
           </form>
 
     </div>

@@ -4,9 +4,11 @@ import { motion,useAnimation } from 'framer-motion'
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxhooks'
 import { layOutActions } from '@/store/layoutSlice'
 
+interface ToggleInterface{
+  md?:boolean
+}
 
-
-export default function ToggleButton() {
+export default function ToggleButton({md=false}:ToggleInterface){
     const dispatch = useAppDispatch()
     const {navActive} = useAppSelector((state=>state.layout))
     const control = useAnimation()
@@ -22,7 +24,7 @@ export default function ToggleButton() {
   },[navActive])
 
   return (
-    <button className='flex md:hidden ml-6 flex-col justify-between h-[24px] w-[30px] cursor-pointer' onClick={handleChange}>
+    <button className={`flex ${md?"lg:hidden":"md:hidden"} ml-6 flex-col justify-between h-[24px] w-[30px] cursor-pointer`} onClick={handleChange}>
     <motion.span className='toggler' variants={toggleAnimation(1)} initial="initial" animate={control}></motion.span>
     <motion.span className='toggler' variants={toggleCenter()} initial="initial" animate={control}></motion.span>
     <motion.span className='toggler' variants={toggleAnimation(3)} initial="initial" animate={control}></motion.span>

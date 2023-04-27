@@ -3,7 +3,7 @@ import GratImg from '../utils/GratImg'
 import { SignUpResource } from '@/public/signup/signupExporter'
 import { Typography, signUpfeatures } from '@/utils/landingK'
 import SignUPForm from './SignUpForm'
-import SliderLayout from '../utils/Layout.tsx/SliderLayout'
+import SliderLayout from '../utils/LandingLayout.tsx/SliderLayout'
 import Background from './Background'
 
 export default function Signup() {

@@ -46,6 +46,10 @@
   @apply outline-none w-full text-[#BCC1CAFF] focus:text-[#54575c]  bg-transparent
 }
 
+.my-underline{
+  @apply before:absolute before:w-full before:h-[4px] before:bg-grat-green before:left-0 before:-bottom-[10px]
+}
+
 @tailwind utilities;
 
 
