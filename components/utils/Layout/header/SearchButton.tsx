@@ -13,7 +13,7 @@ export default function SearchButton({className,setHeaderState}:SearchInterface)
 
   const handleToogle = ()=>{
     setHeaderState((prev=>{
-      return{...prev,isSearching:!prev.isSearching}
+      return{...prev,isSearching:true,isOverlay:true,navActive:false}
     }))
   }
   return (

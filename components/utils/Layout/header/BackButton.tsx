@@ -11,7 +11,7 @@ export interface SearchInterface{
 export default function BackButton({setHeaderState,className}:SearchInterface) {
   const handleChange = ()=>{
     setHeaderState((prev=>{
-      return{...prev,isSearching:!prev.isSearching}
+      return{...prev,isSearching:false,navActive:false,isOverlay:false}
     }))
   }  
   return (

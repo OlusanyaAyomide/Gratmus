@@ -1,5 +1,5 @@
 import { landingExporter } from "@/public/landing/image/landingExporter";
-
+import { AnimatePresenceProps, motion } from "framer-motion";
 export const toggleCenter = () => {
     return {
       initial: {
@@ -133,3 +133,15 @@ export const HeroArray =[
   landingExporter.Avatar3,landingExporter.Avatar4,
   landingExporter.Avatar5,landingExporter.Avatar6,
 ]
+
+export const LandingMenuAnimation = {
+  initial:{
+    y:-100   
+  },
+  animate:{
+    y:0,
+    transition:{
+      duration:1
+    }
+  }
+}

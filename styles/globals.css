@@ -4,14 +4,16 @@
 
 
 :root{
-  @apply bg-white font-lato
+  @apply bg-white font-lato text-grat-black
   
 }
 
 .cont{
   @apply px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16
 }
-
+.my-filter{
+  backdrop-filter:blur(2px);
+}
 .massive-text{
   @apply text-3xl md:text-4xl lg:text-[46px] lg:leading-[68px]
 }
@@ -49,6 +51,7 @@
 .my-underline{
   @apply before:absolute before:w-full before:h-[4px] before:bg-grat-green before:left-0 before:-bottom-[10px]
 }
+
 
 @tailwind utilities;
 

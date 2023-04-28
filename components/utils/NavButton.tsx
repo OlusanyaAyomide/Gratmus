@@ -6,22 +6,23 @@ import { layOutActions } from '@/store/layoutSlice'
 
 interface ToggleInterface{
   md?:boolean
+  onClick:()=>void
+  isActive:boolean
 }
 
-export default function ToggleButton({md=false}:ToggleInterface){
+export default function ToggleButton({md=false,onClick,isActive}:ToggleInterface){
     const dispatch = useAppDispatch()
-    const {navActive} = useAppSelector((state=>state.layout))
     const control = useAnimation()
     const handleChange =()=>{
-    dispatch(layOutActions.setNav())
+      onClick()
   }
 
   useEffect(()=>{
-    if(navActive){control.start("animate")}
+    if(isActive){control.start("animate")}
     else{
       control.start("animateback")}
       
-  },[navActive])
+  },[isActive])
 
   return (
     <button className={`flex ${md?"lg:hidden":"md:hidden"} ml-6 flex-col justify-between h-[24px] w-[30px] cursor-pointer`} onClick={handleChange}>

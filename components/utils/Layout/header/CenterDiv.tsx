@@ -13,16 +13,17 @@ import BackButton from './BackButton'
 export interface centerDivInterface{
   isSearching:boolean
   setHeaderState:React.Dispatch<React.SetStateAction<headerInterface>>
-
+  isActive:boolean
+  onClick:()=>void
 }
 
-export default function CenterDiv({isSearching,setHeaderState}:centerDivInterface) {
+export default function CenterDiv({isSearching,setHeaderState,isActive,onClick}:centerDivInterface) {
   const router = useRouter()
   return (
     <div className='h-full w-fit flex-1 justify-around hidden md:flex px-6 md:px-2 item-center relative top-4 xl:top-6'>
     {NavLinks.map((item,key)=>{
       const isActive = router.asPath === item.link
-      console.log(router.asPath)
+
       return(
        <Link href={item.link} key={key} className={`${isSearching?"lg:hidden xl:block":"block"}`}>
         <button className={`h-[32px] w-[32px] relative ${isActive?"my-underline":""}`}><GratImg src={item.image}/></button>
@@ -30,7 +31,7 @@ export default function CenterDiv({isSearching,setHeaderState}:centerDivInterfac
       )
       
     })}
-      <span className='hidden md:block lg:hidden'><ToggleButton md={true}/></span>
+      <span className='hidden md:block lg:hidden'><ToggleButton isActive={isActive} onClick={onClick} md={true}/></span>
       {!isSearching && <SearchButton setHeaderState={setHeaderState} className='hidden lg:block xl:hidden h-[32px] -mr-2 w-[32px]'/>}
     {isSearching && <div className='hidden lg:flex xl:hidden -top-4 items-center relative'>
       <BackButton setHeaderState={setHeaderState}/>

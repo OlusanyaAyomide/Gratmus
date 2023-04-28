@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GratImg from '../GratImg'
 import { landingExporter } from '@/public/landing/image/landingExporter'
 import { navLinks } from '@/utils/landingK'
 import GratButton from '../GratButton'
 import ToggleButton from '../NavButton'
 import LandingMenu from '../landing/LandingMenu'
-import { useAppSelector } from '@/hooks/reduxhooks'
 import Link from 'next/link'
 
 export default function Header() {
-  const {navActive} = useAppSelector((state=>state.layout))
+
+  const [navActive,setNavActive] = useState(false)
+  const handleClick = ()=>{
+    setNavActive((prev=>!prev))
+  }
   return (
     <div className='cont flex items-center py-1 relative '>
       <div className='flex items-center'>
@@ -34,7 +37,7 @@ export default function Header() {
         <Link href={"/signup"}><button className=' hidden lg:block pr-3 border-r-2 py-2 text-lg border-grat-gray text-grat-green font-[500] transition-all duration-300 active:text-white active:bg-grat-green'>Join now</button>
         </Link>
             <GratButton text='Sign in' className='ml-4 hidden xs:block' />
-            <ToggleButton/>
+            <ToggleButton isActive={navActive} onClick={handleClick}/>
         </div>
         {navActive && <LandingMenu/>}
     </div>

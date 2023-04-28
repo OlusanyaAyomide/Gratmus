@@ -21,10 +21,13 @@ module.exports = {
         "grat-gray":"#BCC1CAFF",
         "grat-white":"#DEE1E6FF",
         "grat-light-green":"#ECFDFCFF",
+        "grat-profile-green":"#A5F8F1",
         "grat-pink":"#FF832B17",
         "grat-light":"#FAFAFBFF",
         "grat-offwhite":"#F3F4F6FF",
-        "grat-thick":"#323842FF"
+        "grat-thick":"#323842FF",
+        "grat-light-gray":"#F2F2F2",
+        "grat-light-text":"#9095A0FF"
       },
       screens:{
         xs:"340px",

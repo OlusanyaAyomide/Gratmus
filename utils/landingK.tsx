@@ -235,3 +235,4 @@ export const signUpfeatures=[
         text:"Freelancers"
     },
 ]
+

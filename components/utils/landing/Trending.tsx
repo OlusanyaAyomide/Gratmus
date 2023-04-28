@@ -14,7 +14,7 @@ export default function Trending() {
         <div className='w-full lg:w-6/12 lg:pl-4 flex flex-wrap mt-6 lg:mt-0'>
           {TagList.map((item,key)=>{
               return(
-                <div className='mx-1 sm:mx-4 ' key={key}><GratButton text={item} type={2} className='px-8 py-2 my-1  sm:px-[46px] sm:py-3 md:my-2'/></div>
+                <div className='mx-1 sm:mx-4 ' key={key}><GratButton onClick={()=>{}} text={item} type={2} className='px-8 py-2 my-1  sm:px-[46px] sm:py-3 md:my-2'/></div>
               )
           })}
         </div>

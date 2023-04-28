@@ -2,12 +2,13 @@ import { Typography } from '@/utils/landingK'
 import React from 'react'
 import GratButton from '../GratButton'
 import HeroView from "./HeroView"
+import Counter from './Counter'
 
 export default function Hero() {
   return (
     <div className='bg-grat-light-green justify-center relative z-20 min-h-screen flex flex-wrap md:flex-nowrap items-center cont'>
         <div className='w-full md:pr-3 lg:px-16 mb-2 flex flex-col justify-center min-h-[70vh]'>
-            <span className='massive-text font-sarabun  text-grat-green'>About 16,780 new People <span className='text-grat-black'>Daily</span></span>
+            <Counter/>
             <p className='mt-2 lg:w-[500px] base-text'>{Typography.heroText}</p>
             <div className='mt-3 flex gap-x-3'>
                 <GratButton text='join now'/>
