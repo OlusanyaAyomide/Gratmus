@@ -83,3 +83,32 @@ export const profileGuide={
     second:"Community Guidelines Cookies Policy",
     third:"Career | Language | Copyright Policy"
 }
+
+export const TopButtons=[
+    {image:homeResource.Videos,text:"Media/Reel"},
+    {image:homeResource.ScreenCast,text:"Post a Project"},
+    {image:homeResource.Cart2,text:"Post your items"},
+    {image:homeResource.Calendar,text:"Live Events"},
+]
+
+
+export const FeedMock=[
+    {
+        name:"John Doe",
+        verified:true,
+        profile:homeResource.Avatar1,
+        type:"organization",
+        postedAt:"Posted 3 min ago",
+        nickName:"Epic Coder",
+        following:false, 
+        jobText:"Senior Word press Developer",
+        openforJob:false,
+        postText:"Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end",
+        tags:["Motivation","Trends","JavaScript","Employment"],
+        hasImage:true,
+        postImage:homeResource.Post1,
+        views:150,
+        comments:15,
+        likedBy:"Jessica Williams and 14 others"
+    }
+]

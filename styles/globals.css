@@ -52,7 +52,9 @@
   @apply before:absolute before:w-full before:h-[4px] before:bg-grat-green before:left-0 before:-bottom-[10px]
 }
 
-
+.btn1-hover{
+  @apply  active:bg-grat-green  active:text-white transition-all duration-300  hover:text-grat-green  hover:border hover:border-grat-green hover:bg-white
+}
 @tailwind utilities;
 
 
