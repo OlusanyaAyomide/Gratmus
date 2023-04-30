@@ -15,7 +15,7 @@ export default function Profile() {
         <div className='relative overflow-hidden bottom-[63.75px] h-[127.5px] w-[127.5px] mx-auto bg-grat-profile-green rounded-full'>
           <GratImg src={homeResource.Person2}/>
         </div>
-        <span className=" block text-xl -mt-[48.75px] text-center md:text-2xl text-grat-black font-sarabun">John Smith</span>
+        <span className=" block text-xl -mt-[48.75px] text-center md:text-2xl font-semibold text-grat-black font-sarabun">John Smith</span>
         <span className="base-text block mt-1 text-center text-grat-light-text">Graphic Designer at Self Employed</span>
       </div>
       <div className='my-[2px] rounded-sm py-2 bg-white px-2 sm:px-6 md:px-2'>

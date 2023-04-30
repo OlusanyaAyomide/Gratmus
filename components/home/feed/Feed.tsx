@@ -9,9 +9,7 @@ export default function Feed() {
       <TopSearch/>
       <div className='mt-2'>
         {FeedMock.map((item,key)=>{
-          if (item.type === "post" || item.type === "organization"){
             return <Post {...item} key={key}/>
-          }
         })}
       </div>
     </div>

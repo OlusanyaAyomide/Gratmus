@@ -13,9 +13,11 @@ export default function PostText(item:PostInterface) {
   }
   return (
     <div className='pl-3'>
-    <p className=' text-[#ACC1DAFF] mt-1 text-lg '>{item.nickName}</p>
+    {item.nickName && <p className=' text-[#ACC1DAFF] mt-1 text-lg '>{item.nickName}</p>}
     <p className='mt-2 text-base '>{item.jobText}</p>
-    { isOrganization && <button className='bg-[#597EE8] mt-3 mr-3 rounded-[4px] text-white p-1'>Now Selling</button>}
+    {item.tagList.map((tagString,key)=>{
+      return <button key={key} className='bg-[#597EE8] mt-3 mr-3 rounded-[4px] text-white p-1'>{tagString}</button>
+    })}
     {item.openforJob  && <button className='bg-[#597EE8] mt-3  rounded-[4px] text-white p-1'>Opened for Job</button>} 
     <p className='mt-10'>
       {trimPost(item.postText,postNum.num)}{!postNum.extended && isLonger && 

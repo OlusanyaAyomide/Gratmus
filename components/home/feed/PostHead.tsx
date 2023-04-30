@@ -2,6 +2,7 @@ import React from 'react'
 import { PostInterface } from './Post'
 import GratImg from '@/components/utils/GratImg'
 import { homeResource } from '@/public/home/homeExporter'
+import BidButon from '@/components/utils/BidButon'
 
 export default function PostHead(item:PostInterface) {
   const isOrganization = item.type === "organization"?true:false
@@ -18,7 +19,7 @@ export default function PostHead(item:PostInterface) {
     {!item.following && <div className='flex  items-center mb-1 relative z-20'><button className='text-bold text-lg font-sarabun text-grat-green mr-[6px]'>Follow</button>
     <div className='h-[16px] w-[16px] rounded-sm flex items-center justify-center  bg-grat-green text-white'><span className='mb-[1.3px]'>+</span></div>
     </div>}
-    {isOrganization && <button className='bg-grat-green mt-1 rounded-[4px] px-2 py-[2px] whitespace-nowrap btn1-hover text-white'>Bid Now</button>}
+    {isOrganization && <BidButon/>}
     </div>
   </div>
   )

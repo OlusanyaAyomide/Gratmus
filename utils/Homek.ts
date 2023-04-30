@@ -95,12 +95,13 @@ export const TopButtons=[
 export const FeedMock=[
     {
         name:"John Doe",
-        verified:true,
+        verified:false,
         profile:homeResource.Avatar1,
-        type:"organization",
+        type:"post",
         postedAt:"Posted 3 min ago",
         nickName:"Epic Coder",
         following:false, 
+        tagList:["Open for Job"],
         jobText:"Senior Word press Developer",
         openforJob:false,
         postText:"Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end",
@@ -110,5 +111,130 @@ export const FeedMock=[
         views:150,
         comments:15,
         likedBy:"Jessica Williams and 14 others"
-    }
+    },
+    {
+        name:"Damilola Apparallel",
+        verified:true,
+        profile:homeResource.Profile2,
+        type:"organization",
+        postedAt:"Posted 3 min ago",
+        nickName:false,
+        following:false, 
+        tagList:["Now Selling","Now Hiring"],
+        jobText:"Fashion store clothing",
+        openforJob:false,
+        postText:"Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end23",
+        tags:["Motivation","Trends","Impact","JavaScript","Employment"],
+        hasImage:true,
+        postImage:homeResource.Post2,
+        views:70,
+        comments:18,
+        likedBy:"Jessica Williams and 14 others"
+    },
+    {
+        name:"Engr Badmus",
+        verified:true,
+        profile:homeResource.Profile3,
+        type:"post",
+        postedAt:"Posted 12 min ago",
+        nickName:false,
+        following:false, 
+        tagList:["Open to Projects"],
+        jobText:"Fashion store clothing",
+        openforJob:false,
+        postText:"Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end23",
+        tags:["Real","Trends","Fun","Impact","Employment"],
+        hasImage:false,
+        postImage:null,
+        views:70,
+        video:"abc",
+        comments:18,
+        likedBy:"Jessica Williams and 14 others"
+    },
+    {
+        name:"Wizzy Music",
+        verified:true,
+        profile:homeResource.Profil4,
+        type:"post",
+        postedAt:"Posted 12 min ago",
+        nickName:false,
+        following:true, 
+        tagList:["Open to Projects"],
+        jobText:"Artist Song Writer",
+        openforJob:false,
+        postText:"Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success a Never give up on a dream becaue of time it will take to accomplish it,The time will pass,Just keep believe and keep working for the success at end23",
+        tags:["Real","Trends","Fun","Impact","Employment"],
+        hasImage:false,
+        postImage:null,
+        views:70,
+        audio:"abc",
+        comments:18,
+        likedBy:"Jessica Williams and 14 others"
+    },
 ]
+
+export const Notifications={
+    notificationList:[
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat modi officiis",
+        "Lorem adipisicing elit. Enim, hic cupiditate,  nihil repudiandae aperiam "
+    ],
+    promotedAds:[
+      {
+        role:"Senior Product Designer",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        pay:"$25/hr"
+      },
+      {
+        role:"Senior UI/UX Designer",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        pay:"$23/hr"
+      },
+      {
+        role:"Senior SEO Designer",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        pay:"$21/hr"
+      },
+      {
+        role:"Senior PHP Designer",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        pay:"$25/hr"
+      },
+      {
+        role:"Senior Developer Designer",
+        text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        pay:"$25/hr"
+      },
+    ],
+    viewedPeople:[
+        {
+            image:homeResource.Person1,
+            name:"Jessica Williams",
+            job:"Graphic Designer",
+            circle:false
+        },
+        {
+            image:homeResource.Person2,
+            name:"John Doe",
+            job:"PHP Developer",
+            circle:true
+        },
+        {
+            image:homeResource.Person3,
+            name:"Poo nam",
+            job:"Word Press Developer",
+            circle:true
+        },
+        {
+            image:homeResource.Person4,
+            name:"Bill Gate",
+            job:"C/C++ Developer",
+            circle:true
+        },
+        {
+            image:homeResource.Person5,
+            name:"John Doe",
+            job:"PHP Developer",
+            circle:true
+        },
+    ]
+}
