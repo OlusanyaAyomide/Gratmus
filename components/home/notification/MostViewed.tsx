@@ -18,7 +18,7 @@ export default function MostViewed() {
       <div className='mt-12'>
         {Notifications.viewedPeople.map((item,key)=>{
           return(
-            <div className='mb-8 flex items-center'>
+            <div className='mb-8 flex items-center' key={key}>
               <div className='w-full flex items-center'>
                 <div>
                   <div className='h-11 w-11 md:w-10 md:h-10 lg:h-11 lg:w-11 rounded-full overflow-hidden bg-grat-profile-green'>

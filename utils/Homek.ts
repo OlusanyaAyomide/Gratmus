@@ -1,4 +1,7 @@
 import { homeResource } from "@/public/home/homeExporter";
+import {BsFillPersonFill} from "react-icons/bs"
+import {IoMdNotifications} from "react-icons/io"
+import {AiFillHome} from "react-icons/ai"
 
 export const NavLinks=[
     {
@@ -9,7 +12,7 @@ export const NavLinks=[
     {
         name:"Jobs",
         image:homeResource.Job,
-        link:"/jobs"
+        link:"/company/profile"
     },
     {  
         name:"Groups",
@@ -238,3 +241,127 @@ export const Notifications={
         },
     ]
 }
+
+
+export const TopicList =[
+    {
+        id:0,
+        tag:"TECHNOLOGY"
+    },
+    {
+        id:1,
+        tag:"SALES"
+    },
+    {
+        id:2,
+        tag:"ACCOUNTANT"
+    },
+    {
+        id:3,
+        tag:"MUSIC"
+    },
+    {
+        id:4,
+        tag:"TECH"
+    },
+    {
+        id:5,
+        tag:"PROJECT"
+    },
+    {
+        id:6,
+        tag:"INVESTORS ARE GREEDY"
+    },
+    {
+        id:7,
+        tag:"NEW JOB"
+    },
+    {
+        id:8,
+        tag:"FOOTBALL"
+    },
+    {
+        id:13,
+        tag:"EDITORS"
+    },
+    {
+        id:9,
+        tag:"ACCOUNTANT"
+    },
+    {
+        id:10,
+        tag:"MUSIC"
+    },
+    {
+        id:11,
+        tag:"TECH"
+    },
+    {
+        id:12,
+        tag:"PROJECT"
+    },
+]
+
+
+export const Herotext ="Never Pay anyone on or before getting job, all job posted here are free of charge, we hold no resposibility to any employmentscam. If any profile request for money, please report the profile immediately_"
+
+
+export const JobList =[
+    {
+        name:"JUST HIRED GLOBAL LTD",
+        jobTitle:"FrontEnd DEveloper",
+        jobDescription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae architecto illum aperiam sint, voluptatum eaque consequatur.",
+        followers:500,
+        isVerified:true,
+        persons:[
+            homeResource.Person1,
+            homeResource.Person2,
+            homeResource.Person3,
+            homeResource.Person4,
+            homeResource.Person3,
+        ]
+    },
+    {
+        name:"JUST HIRED GLOBAL LTD",
+        jobTitle:"FrontEnd DEveloper",
+        jobDescription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae architecto illum aperiam sint, voluptatum eaque consequatur.",
+        followers:500,
+        isVerified:true,
+        persons:[
+            homeResource.Person1,
+            homeResource.Person2,
+            homeResource.Person3,
+            homeResource.Person4,
+            homeResource.Person3,
+        ]
+    },
+    {
+        name:"JUST HIRED GLOBAL LTD",
+        jobTitle:"FrontEnd DEveloper",
+        jobDescription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae architecto illum aperiam sint, voluptatum eaque consequatur.",
+        followers:500,
+        isVerified:true,
+        persons:[
+            homeResource.Person1,
+            homeResource.Person2,
+            homeResource.Person3,
+            homeResource.Person4,
+            homeResource.Person3,
+        ]
+    },
+    {
+        name:"JUST HIRED GLOBAL LTD",
+        jobTitle:"FrontEnd DEveloper",
+        jobDescription:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae architecto illum aperiam sint, voluptatum eaque consequatur.",
+        followers:500,
+        isVerified:true,
+        persons:[
+            homeResource.Person1,
+            homeResource.Person2,
+            homeResource.Person3,
+            homeResource.Person4,
+            homeResource.Person3,
+        ]
+    },
+
+]

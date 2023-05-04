@@ -25,7 +25,7 @@ export default function ToggleButton({md=false,onClick,isActive}:ToggleInterface
   },[isActive])
 
   return (
-    <button className={`flex ${md?"lg:hidden":"md:hidden"} ml-6 flex-col justify-between h-[24px] w-[30px] cursor-pointer`} onClick={handleChange}>
+    <button className={`flex ${md?"lg:hidden":"md:hidden"} ml-6 flex-col justify-between h-[20px] w-[24px] cursor-pointer`} onClick={handleChange}>
     <motion.span className='toggler' variants={toggleAnimation(1)} initial="initial" animate={control}></motion.span>
     <motion.span className='toggler' variants={toggleCenter()} initial="initial" animate={control}></motion.span>
     <motion.span className='toggler' variants={toggleAnimation(3)} initial="initial" animate={control}></motion.span>

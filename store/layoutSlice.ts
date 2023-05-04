@@ -1,21 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "./interface";
+import type { PayloadAction } from '@reduxjs/toolkit'
 
 export interface layoutInterface{
-    navActive:boolean
+    homePage:number
 }
 
 const initialState:layoutInterface={
-    navActive:false
+    homePage:1
 }
 
 export const layoutSlice=createSlice({
     name:"layout",
     initialState,
     reducers:{
-        setNav(state){
-            state.navActive = !state.navActive
-        }
+       setHome(state,action:PayloadAction<number>){
+         state.homePage = action.payload
+       }
     }  
 })
 

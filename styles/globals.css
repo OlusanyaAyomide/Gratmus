@@ -41,7 +41,16 @@
 }
 
 .section-header{
-  @apply lg:text-5xl md:text-4xl  text-xl sm:text-3xl font-sarabun text-grat-black font-[500] 
+  @apply  md:text-4xl  text-2xl sm:text-3xl font-sarabun text-grat-black font-[500] 
+}
+.home-scroll::-webkit-scrollbar{
+  @apply w-[5px] bg-grat-light
+}
+.home-scroll::-webkit-scrollbar-track{
+  @apply bg-grat-light
+}
+.home-scroll::-webkit-scrollbar-thumb{
+  @apply bg-black/20 rounded-lg w-[4px]
 }
 
 .input-2{
@@ -49,7 +58,7 @@
 }
 
 .my-underline{
-  @apply before:absolute before:w-full before:h-[4px] before:bg-grat-green before:left-0 before:-bottom-[10px]
+  @apply before:absolute before:w-[180%] before:h-[2px] before:bg-grat-green before:-left-[40%] before:-bottom-0
 }
 
 .btn1-hover{

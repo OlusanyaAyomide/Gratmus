@@ -36,7 +36,7 @@ export const toggleCenter = () => {
       },
       animate: {
         rotate: number === 1 ? "45deg" : "-45deg",
-        y: number === 1 ? 10 : -10,
+        y: number === 1 ? 8.2 : -8.2,
         height: "3px",
         transition: {
           duration: 0.5,

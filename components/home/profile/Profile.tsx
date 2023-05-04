@@ -9,7 +9,7 @@ import Suggestions from './Suggestions'
 
 export default function Profile() {
   return (
-    <div>
+    <div className='pt-12'>
       <section className='px-1 pb-1 py-24 bg-grat-green rounded-[4px]'>
       <div className='bg-white my-[2px] rounded-[4px] pb-4'>
         <div className='relative overflow-hidden bottom-[63.75px] h-[127.5px] w-[127.5px] mx-auto bg-grat-profile-green rounded-full'>

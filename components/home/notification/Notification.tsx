@@ -8,7 +8,7 @@ import MostViewed from './MostViewed'
 export default function Notification() {
 
   return (
-    <div className='py-2 px-2 lg:mx-0 lg:px-3'>
+    <div className='py-2 px-2 lg:-mx-2 pt-12'>
       <NotificationList/>
       <Promoted title='Promoted Ads' array={Notifications.promotedAds}/>
       <Promoted title2='Most Viewed This Week' array={Notifications.promotedAds}/>

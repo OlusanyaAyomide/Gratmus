@@ -25,15 +25,19 @@ const initialState={
 export default function Header(){
 
   const [headerState,setHeaderState] = useState<headerInterface>(initialState)
+  const handleCancel =()=>{
+    setHeaderState((prev=>{return{...prev,isSearching:false,isOverlay:false,navActive:false}}))
+  }
   const handleClick = ()=>{
     setHeaderState((prev=>{return{...prev,
       navActive:!prev.navActive,isSearching:false,isOverlay:prev.navActive?false:true
     }}))
   }
+
   return (
     <>
-      {headerState.isOverlay && <div className={`z-30 xl:hidden my-filter fixed -inset-1 my-blur w-[120%] h-full bg-black/60 ${headerState.navActive?"lg:hidden":""}`}></div>}
-     <div className='flex items-center lg:justify-between relative z-40 bg-white'>
+      {headerState.isOverlay && <div onClick={handleCancel} className={`z-30 xl:hidden my-filter fixed -inset-1 my-blur w-[120%] h-full bg-black/60 ${headerState.navActive?"lg:hidden":""}`}></div>}
+     <div className='flex items-center lg:justify-between relative z-40  py-2 sm:pt-1 bg-white'>
       {headerState.navActive && <SideBar/>}
       <div className='flex pl-3 sm:pl-3 md:pl-4 lg:pl-6 pr-3 w-full md:w-fit  justify-between'>
         <div>
@@ -54,11 +58,11 @@ export default function Header(){
         </div>
       </div>
       <CenterDiv isActive={headerState.navActive} onClick={handleClick} isSearching={headerState.isSearching} setHeaderState={setHeaderState}/>
-      <div className='bg-[#DEE1E6FF]  py-1  pr-2 sm:pr-3 md:pr-4 lg:pr-6 h-[80px] hidden lg:flex items-center justify-between'>
+      <div className='bg-[#DEE1E6FF] relative top-[2px] -my-4  pr-2 sm:pr-3 md:pr-4 lg:pr-6 h-[72px] hidden lg:flex items-center justify-between'>
           <div className="flex px-4 pr-2 border-l">
-           <button className='h-[32px] w-[32px] mx-4'>{<GratImg src={homeResource.Circles}/>}</button>
-           <button className='h-[32px] w-[32px] mx-4'>{<GratImg src={homeResource.Chat}/>}</button>
-           <button className='h-[32px] w-[32px] mx-4'>{<GratImg src={homeResource.Notification}/>}</button>
+           <button className='h-[26px] w-[26px] mx-4'>{<GratImg src={homeResource.Circles}/>}</button>
+           <button className='h-[26px] w-[26px] mx-4'>{<GratImg src={homeResource.Chat}/>}</button>
+           <button className='h-[26px] w-[26px] mx-4'>{<GratImg src={homeResource.Notification}/>}</button>
           </div>
           <div className='flex items-center ml-2'>
             <div>
