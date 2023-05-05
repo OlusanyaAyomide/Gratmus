@@ -9,6 +9,8 @@ import CenterDiv from './CenterDiv'
 import SearchButton from './SearchButton'
 import BackButton from './BackButton'
 import SideBar from './SideBar'
+import Link from 'next/link'
+import OverLay from '../../OverLay'
 
 
 export interface headerInterface{
@@ -36,7 +38,7 @@ export default function Header(){
 
   return (
     <>
-      {headerState.isOverlay && <div onClick={handleCancel} className={`z-30 xl:hidden my-filter fixed -inset-1 my-blur w-[120%] h-full bg-black/60 ${headerState.navActive?"lg:hidden":""}`}></div>}
+      {headerState.isOverlay && <OverLay index={30} isHidden={headerState.navActive} handleCancel={handleCancel}/>}
      <div className='flex items-center lg:justify-between relative z-40  py-2 sm:pt-1 bg-white'>
       {headerState.navActive && <SideBar/>}
       <div className='flex pl-3 sm:pl-3 md:pl-4 lg:pl-6 pr-3 w-full md:w-fit  justify-between'>
@@ -66,10 +68,9 @@ export default function Header(){
           </div>
           <div className='flex items-center ml-2'>
             <div>
-            <div className='h-[32px] mr-1 w-[32px] border border-grat-green rounded-full bg-green-200'></div>
+            <Link href={"/user/profile"}><button className='h-[32px] mr-1 w-[32px] border border-grat-green rounded-full bg-green-200'></button></Link>
             </div>
-
-            <span className='font-semibold base-text text-sm '>John Smith</span>
+            <Link href={"/user/profile"}><span className='font-semibold base-text text-sm '>John Smith</span></Link>
             <div className='ml-2 h-[16px] w-[16px]'><GratImg src={homeResource.Dropdown}/></div>
           </div>
       </div>

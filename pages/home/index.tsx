@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <Layout footer={false}>
       <Togglers/>
-      <div className='bg-grat-light-gray flex lg:justify-between  px-3 md:px-4 lg:px-6 h-[106vh] overflow-auto '>
-        <div className={`w-full h-full overflow-x-hidden home-scroll overflow-auto md:flex-none md:w-[260px] lg:w-[300px] ${page===0?"":page===1 ?"hidden md:block":"hidden xl:block"}`}>
+      <div className='bg-grat-light-gray flex lg:justify-between  px-3 md:px-4 lg:px-6 overflow-auto '>
+        <div className={`w-full h-full overflow-x-hidden home-scroll overflow-auto md:flex-none md:w-[280px] lg:w-[300px] ${page===0?"":page===1 ?"hidden md:block":"hidden xl:block"}`}>
           <Profile/>
         </div>
         {page === 2 && <div className='md:w-[270px] overflow-x-hidden home-scroll h-full overflow-auto lg:w-[300px] md:flex-none hidden md:block xl:hidden'>

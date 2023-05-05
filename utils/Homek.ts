@@ -365,3 +365,12 @@ export const JobList =[
     },
 
 ]
+
+
+export const PersonList=[
+    homeResource.Person1,
+    homeResource.Person2,
+    homeResource.Person3,
+    homeResource.Person4,
+    homeResource.Person3,   
+]

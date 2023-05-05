@@ -6,7 +6,6 @@ export const trimPost = (post:string,num:number)=>{
         excerpt += words[i] + " ";
       }
     } else {
-      console.log("hereee")
       excerpt = post;
 
     }

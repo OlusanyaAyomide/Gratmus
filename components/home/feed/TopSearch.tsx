@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function TopSearch() {
   return (
-    <div className='px-4 -mt-4 mb-2  sm:mx-6 rounded-[4px] pt-5 pb-2 bg-white'>
+    <div className='px-4 -mt-4 mb-2 hidden md:block sm:mx-6 rounded-[4px] pt-5 pb-2 bg-white'>
         <div className='flex w-full'>
       <div>
       <div className='bg  bg-grat-profile-green h-[42px] w-[42px] lg:h-[46px] lg:w-[46px] rounded-full overflow-hidden'><GratImg src={homeResource.TopAvatar}/></div>

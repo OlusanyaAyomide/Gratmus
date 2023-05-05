@@ -3,9 +3,9 @@ import { homeResource } from '@/public/home/homeExporter'
 import { suggestionList } from '@/utils/Homek'
 import React from 'react'
 
-export default function Suggestions() {
+export default function Suggestions({onFixed=false}:{onFixed?:boolean}) {
   return (
-    <div className='px-2 sm:px-6  bg-white mt-12 mb-4 rounded-[4px] py-10'>
+    <div className={`px-2 sm:px-6  bg-white mt-12 mb-4 rounded-[4px] ${onFixed?"py-4":"py-10"}`}>
       <div className='flex justify-between'>
       <span className='block mt-2 text-lg '>Suggestions</span>
       <button>

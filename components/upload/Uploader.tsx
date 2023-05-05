@@ -26,7 +26,6 @@ export default function Uploader() {
   
   const handleDragEnter = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    console.log("Active")
     containerRef.current?.classList.add('dragging');
   };
 

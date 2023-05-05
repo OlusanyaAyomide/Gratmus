@@ -12,7 +12,6 @@ interface ExtendedTopicInterface extends TopicInterface {
 
 export default function Topics() {
   const [items,setItems] = useState<TopicInterface[]>([])
-  console.log(items)
 
   const editChosen = ({id,tag,isPresent}:ExtendedTopicInterface)=>{
    if (isPresent){

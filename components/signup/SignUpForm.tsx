@@ -63,7 +63,6 @@ export default function SignUPForm() {
       return
     }
     //Sucesss
-    console.log("Hereeee")
     setformState(initialState)
   }
 
@@ -94,7 +93,6 @@ export default function SignUPForm() {
   const handlePassword = (e:React.ChangeEvent<HTMLInputElement>)=>{
     const islong = /^.{8,}$/.test(e.target.value)
     const isValid = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[!@#$%^&*()_+={}|[\]\\:;"'<>,.?/~]).{8,}$/.test(e.target.value)
-    console.log(isValid)
     setformState(prev=>{
       return{
         ...prev,password:{...prev.password,value:e.target.value,isValid:islong && !isValid ?1:isValid?2:0,errorMessage:null}

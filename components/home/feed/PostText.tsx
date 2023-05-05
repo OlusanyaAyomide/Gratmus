@@ -2,10 +2,8 @@ import React,{useState} from 'react'
 import { PostInterface } from './Post'
 import { trimPost } from '@/utils/helper'
 export default function PostText(item:PostInterface) {
-  const isOrganization = item.type === "organization"?true:false
   const [postNum,setPostNum] = useState({num:25,extended:false})
   const isLonger = item.postText.length > postNum.num
-  console.log(isLonger)
   const handleChange = ()=>{
     setPostNum((prev=>{
       return{...prev,num:prev.num===25?item.postText.length:25,extended:!prev.extended}

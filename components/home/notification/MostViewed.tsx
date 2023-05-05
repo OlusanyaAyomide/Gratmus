@@ -3,9 +3,11 @@ import { homeResource } from '@/public/home/homeExporter'
 import { Notifications } from '@/utils/Homek'
 import React from 'react'
 import {AiFillCheckSquare} from "react-icons/ai"
-export default function MostViewed() {
+
+
+export default function MostViewed({onFixed=false}:{onFixed?:boolean}) {
   return (
-    <div className='bg-white rounded-[4px]  px-4 relative py-6'>
+    <div className={` bg-white rounded-[4px]  px-4 relative  ${onFixed?"pt-4 pb-2":"py-6"}`}>
       <div className='flex items-center'>
         <h1 className='text-lg w-full '>Most Viewed People</h1>
         <div>

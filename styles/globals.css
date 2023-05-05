@@ -56,6 +56,9 @@
 .input-2{
   @apply outline-none w-full text-[#BCC1CAFF] focus:text-[#54575c]  bg-transparent
 }
+.feed-buttons{
+  @apply rounded-full flex justify-center items-center h-[40px] w-[40px] border-[2px] my-1 border-grat-green bg-white text-grat-green text-2xl
+}
 
 .my-underline{
   @apply before:absolute before:w-[180%] before:h-[2px] before:bg-grat-green before:-left-[40%] before:-bottom-0
@@ -63,6 +66,9 @@
 
 .btn1-hover{
   @apply  active:bg-grat-green  active:text-white transition-all duration-300  hover:text-grat-green  hover:border hover:border-grat-green hover:bg-white
+}
+.profile-text{
+  @apply  block text-xl -mt-[48.75px] text-center md:text-2xl font-semibold text-grat-black font-sarabun
 }
 @tailwind utilities;
 

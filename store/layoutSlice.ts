@@ -4,10 +4,12 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 
 export interface layoutInterface{
     homePage:number
+    profileVisible:boolean
 }
 
 const initialState:layoutInterface={
-    homePage:1
+    homePage:1,
+    profileVisible:false
 }
 
 export const layoutSlice=createSlice({
@@ -16,6 +18,9 @@ export const layoutSlice=createSlice({
     reducers:{
        setHome(state,action:PayloadAction<number>){
          state.homePage = action.payload
+       },
+       setProfileStaus(state,action:PayloadAction<boolean>){
+        state.profileVisible= action.payload
        }
     }  
 })
