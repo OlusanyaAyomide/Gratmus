@@ -7,9 +7,9 @@ import Router, { useRouter } from 'next/router'
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
   return ( <Provider store={store}>
-    <AnimatePresence>
+
       <Component {...pageProps} key={router.asPath}/>
-    </AnimatePresence>
+
 
 </Provider>
 ) 

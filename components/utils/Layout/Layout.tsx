@@ -10,7 +10,7 @@ interface Layout{
 }
 
 export default function Layout({children,footer=true,header=true}:Layout) {
-  const {ref,inView,entry} = useInView()
+  const {ref,inView,entry} = useInView({threshold:0.6})
   console.log(inView)
   return (
     <div className='min-h-[100vh] flex flex-col overflow-hidden max-w-[1400px] mx-auto'>

@@ -7,6 +7,6 @@ interface OverLayyInterface{
 
 export default function OverLay({handleCancel,index,isHidden}:OverLayyInterface) {
   return (
-    <div  onScroll={handleCancel} style={{zIndex:index}} onClick={handleCancel} className={`xl:hidden my-filter fixed -inset-1 my-blur w-[120%] h-full bg-black/60 ${isHidden?"lg:hidden":""}`}></div>
+    <div  onScroll={handleCancel} style={{zIndex:index}} onClick={handleCancel} className={`xl:hidden my-filter fixed -inset-1 my-blur w-[120%] h-[110vh] bg-black/60 ${isHidden?"lg:hidden":""}`}></div>
   )
 }

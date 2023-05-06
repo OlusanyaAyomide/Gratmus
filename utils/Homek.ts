@@ -374,3 +374,21 @@ export const PersonList=[
     homeResource.Person4,
     homeResource.Person3,   
 ]
+
+export const ProfileContents=[
+    {
+        text:"Shop",
+        image:homeResource.Circles,
+        link:"/home"
+    },
+    {
+        text:"chat",
+        image:homeResource.Chat,
+        link:"/home"
+    },
+    {
+        text:"Notification",
+        image:homeResource.Notification,
+        link:"/home"
+    },
+]

@@ -24,7 +24,7 @@
   @apply text-grat-black text-sm
 }
 .toggler{
-  @apply bg-grat-black h-[4px] w-full inline-block
+  @apply bg-grat-light-text h-[4px] w-full inline-block
 }
 .explore::-webkit-scrollbar{
   display:none;

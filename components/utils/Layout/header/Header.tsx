@@ -11,6 +11,7 @@ import BackButton from './BackButton'
 import SideBar from './SideBar'
 import Link from 'next/link'
 import OverLay from '../../OverLay'
+import { AnimatePresence } from 'framer-motion'
 
 
 export interface headerInterface{
@@ -40,7 +41,10 @@ export default function Header(){
     <>
       {headerState.isOverlay && <OverLay index={30} isHidden={headerState.navActive} handleCancel={handleCancel}/>}
      <div className='flex items-center lg:justify-between relative z-40  py-2 sm:pt-1 bg-white'>
+      <AnimatePresence>
       {headerState.navActive && <SideBar/>}
+      </AnimatePresence>
+
       <div className='flex pl-3 sm:pl-3 md:pl-4 lg:pl-6 pr-3 w-full md:w-fit  justify-between'>
         <div>
           <div className={`flex-0 w-[110px] h-[36.9px] md:w-[133px] md:h-[43px] ${headerState.isSearching?"hidden md:block":""}`}>

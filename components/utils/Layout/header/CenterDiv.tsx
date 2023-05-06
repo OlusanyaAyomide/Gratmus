@@ -20,7 +20,7 @@ export interface centerDivInterface{
 export default function CenterDiv({isSearching,setHeaderState,isActive,onClick}:centerDivInterface) {
   const router = useRouter()
   return (
-    <div className='h-full mt-[12px]  w-fit flex-1 justify-around hidden md:flex px-6 md:px-2 lg:px-16 xl:px-12 item-center relative'>
+    <div className='h-full mt-[12px] items-center  w-fit flex-1 justify-around hidden md:flex px-6 md:px-2 lg:px-16 xl:px-12 item-center relative'>
     {NavLinks.map((item,key)=>{
       const isActive = router.asPath === item.link
 
