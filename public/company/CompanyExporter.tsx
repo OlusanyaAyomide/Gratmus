@@ -9,7 +9,13 @@ import Medal from "./Medal.png";
 import Dancing from "./Dancing.svg";
 import Group from "./Agroup.png";
 import Search from "./Aserach.png";
-import Star from "./Astar.png"
+import Star from "./Astar.png";
+import Job1 from "./Job1.png";
+import Job2 from "./Job2.png";
+import Job3 from "./Job3.png";
+import Education from "./Eduactions.svg";
+
+
 export const CompanyExporter = {
-    HeroGirl,Man,Rectangle1,Rectangle2,Bulb,Rectangle3,Logo,Medal,Dancing,Group,Search,Star
+    HeroGirl,Man,Rectangle1,Rectangle2,Bulb,Rectangle3,Logo,Medal,Dancing,Group,Search,Star,Job1,Job2,Job3,Education
 }
