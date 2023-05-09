@@ -27,7 +27,8 @@ module.exports = {
         "grat-offwhite":"#F3F4F6FF",
         "grat-thick":"#323842FF",
         "grat-light-gray":"#F2F2F2",
-        "grat-light-text":"#9095A0FF"
+        "grat-light-text":"#9095A0FF",
+        "grat-orange":"#FF832BFF"
       },
       screens:{
         xs:"340px",

@@ -6,13 +6,12 @@ import {profileList } from '@/utils/Homek'
 import Link from 'next/link'
 import Suggestions from './Suggestions'
 import HelpCenter from './HelpCenter'
-import { useInView } from 'react-intersection-observer'
+
 
 export default function Profile() {
-  const {ref,inView,entry} = useInView()
-
+ 
   return (
-    <div className='pt-12 ' ref={ref}>
+    <div className='pt-12 pb-6'>
       <section className='px-1 pb-1 py-24 bg-grat-green rounded-[4px]'>
       <div className='bg-white my-[2px] rounded-[4px] pb-4'>
         <div className='relative overflow-hidden bottom-[63.75px] h-[127.5px] w-[127.5px] mx-auto bg-grat-profile-green rounded-full'>
@@ -48,10 +47,6 @@ export default function Profile() {
       </div>
     </section>
     <div>
-      {entry && !inView && <div className='fixed top-10 w-[280px] lg:w-fit'>
-        <Suggestions onFixed={true}/>
-      </div>}
-
     </div>
     <Suggestions/>
     <HelpCenter/>    

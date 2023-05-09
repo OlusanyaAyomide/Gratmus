@@ -17,7 +17,7 @@ export default function MostViewed({onFixed=false}:{onFixed?:boolean}) {
         </div>
       </div>
 
-      <div className='mt-12'>
+      <div className='mt-12 '>
         {Notifications.viewedPeople.map((item,key)=>{
           return(
             <div className='mb-8 flex items-center' key={key}>
@@ -44,7 +44,7 @@ export default function MostViewed({onFixed=false}:{onFixed?:boolean}) {
           )
         })}
       </div>
-      <div className='flex  mt-6 justify-center'>
+      <div className='flex  mt-6 mb-8  justify-center'>
         <button className='text-sm text-[#E66359FF]'>View More</button>
       </div>
     </div>

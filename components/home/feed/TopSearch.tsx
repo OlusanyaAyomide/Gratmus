@@ -1,10 +1,13 @@
 import GratImg from '@/components/utils/GratImg'
+import { useAppDispatch } from '@/hooks/reduxhooks'
 import { homeResource } from '@/public/home/homeExporter'
+import { layOutActions } from '@/store/layoutSlice'
 import { TopButtons } from '@/utils/Homek'
 import Link from 'next/link'
 import React from 'react'
 
 export default function TopSearch() {
+  const dispatch = useAppDispatch()
   return (
     <div className='px-4 -mt-4 mb-2 hidden md:block sm:mx-6 rounded-[4px] pt-5 pb-2 bg-white'>
         <div className='flex w-full'>
@@ -12,7 +15,8 @@ export default function TopSearch() {
       <div className='bg  bg-grat-profile-green h-[42px] w-[42px] lg:h-[46px] lg:w-[46px] rounded-full overflow-hidden'><GratImg src={homeResource.TopAvatar}/></div>
       </div>
       <div className='w-full max-w-[600px]'>
-        <input placeholder='Write a post' type="text" className='px-3 py-2 rounded-[25px] outline-none w-[90%] block mx-auto  hover:base-text border border-grat-light-text' />
+        <input onFocus={()=>{
+          dispatch(layOutActions.setIsPosting(true))}} placeholder='Write a post'  type="text" className='px-3 py-2 rounded-[25px] outline-none w-[90%] block mx-auto  hover:base-text border border-grat-light-text' />
       </div>
     </div>
     <div className='flex mx-auto max-w-[500px] justify-between overflow-auto px-8 sm:px-16   flex-wrap '>

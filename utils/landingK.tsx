@@ -1,3 +1,4 @@
+import { CompanyExporter } from "@/public/company/CompanyExporter";
 import { landingExporter } from "@/public/landing/image/landingExporter";
 import { SignUpResource } from "@/public/signup/signupExporter";
 
@@ -236,3 +237,17 @@ export const signUpfeatures=[
     },
 ]
 
+export const EducationList =[
+    {
+        name:"Melbourne Univesity New York",
+        logo:CompanyExporter.Job2,
+        text:"Advanced Diploma in MultiMedia",
+        duration:"2014-2017"
+    },
+    {
+        name:"Univerity of Abudhabi",
+        logo:CompanyExporter.Job1,
+        text:"Advanced Diploma Internation Relations",
+        duration:"2017-2018"
+    },
+]

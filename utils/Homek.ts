@@ -2,6 +2,7 @@ import { homeResource } from "@/public/home/homeExporter";
 import {BsFillPersonFill} from "react-icons/bs"
 import {IoMdNotifications} from "react-icons/io"
 import {AiFillHome} from "react-icons/ai"
+import { CompanyExporter } from "@/public/company/CompanyExporter";
 
 export const NavLinks=[
     {
@@ -392,3 +393,67 @@ export const ProfileContents=[
         link:"/home"
     },
 ]
+
+
+export const AnalyticsData =[
+    {
+        image:CompanyExporter.Group,
+        text:"200 viewers",
+        desc:"Amet eiusmod"
+    },
+    {
+        image:CompanyExporter.Star,
+        text:"100 Impressions",
+        desc:"Amet eiusmod"
+    },
+    {
+        image:CompanyExporter.Search,
+        text:"700 Searchs",
+        desc:"Amet eiusmod"
+    },
+]
+
+
+export const AboutMeText ="     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis in neque perspiciatis illum similique eos omnis, error iste qui debitis exercitationem! Ducimus in deleniti corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat veniam! adipisicing elit. Perferendis in neque perspiciatis illum similique eos omnis, error iste qui debitis exercitationem! Ducimus in deleniti corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat ven"
+
+
+
+
+export const WorkingExperience=[
+    {
+        logo:CompanyExporter.Job1,
+        title:"Senior FrontEnd DEveloper",
+        working:true,
+        roles:["Full Time","ByeTendance"],
+        date:"Jan 21 - Present 1yrs 8month",
+        description:"corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat veniam! adipisicing elit. Perferendis in neque perspiciatis illum similique eos omnis, error iste qui debitis exercitationem! Ducimus in deleniti corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat ven"
+    },  
+    {
+        logo:CompanyExporter.Job2,
+        title:"Junior Ux Designer",
+        working:false,
+        roles:["Full Time","ByeTendance","DropBox"],
+        date:"August 2018 - November 2020",
+        description:"corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat veniam! adipisicing elit. Perferendis in neque perspiciatis illum similique eos omnis, error iste qui debitis exercitationem! Ducimus in deleniti corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat ven"
+    },   
+    {
+        logo:CompanyExporter.Job3,
+        title:"Ux Designer Intern",
+        working:false,
+        roles:["Full Time","Brex","Shopify"],
+        date:"April 2017 - October 2021",
+        description:"corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat veniam! adipisicing elit. Perferendis in neque perspiciatis illum similique eos omnis, error iste qui debitis exercitationem! Ducimus in deleniti corrupti quo sequi, dolores nemo consequatur exercitationem pariatur, mollitia labore quam, non totam consectetur fugiat ven"
+    },   
+]
+
+
+export const ProfileSkillSet =[
+    {text:"Research",experience:"3 Years",Endorsement:2},
+    {text:"Design Software",experience:"5 Years",Endorsement:2},
+    {text:"User Experience",experience:"3 Years",Endorsement:false},
+    {text:"User Inerface Design",experience:"5 Years",Endorsement:false},
+
+]
+
+
+

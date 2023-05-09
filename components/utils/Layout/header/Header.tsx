@@ -47,15 +47,15 @@ export default function Header(){
 
       <div className='flex pl-3 sm:pl-3 md:pl-4 lg:pl-6 pr-3 w-full md:w-fit  justify-between'>
         <div>
-          <div className={`flex-0 w-[110px] h-[36.9px] md:w-[133px] md:h-[43px] ${headerState.isSearching?"hidden md:block":""}`}>
+          <div className={`flex-0 w-[110px] h-[36.9px] md:w-[133px] md:h-[43px] ${headerState.isSearching?"hidden lg:block":""}`}>
           <GratImg src={landingExporter.Logo} piority={true}/>
           </div> 
         </div> 
-        {headerState.isSearching && <div className="md:hidden ml-2 w-full flex items-center">
-          <BackButton setHeaderState={setHeaderState} className='text-3xl md:hidden mr-1 text-grat-black font-extrabold'/>
+        {headerState.isSearching && <div className="lg:hidden ml-2 w-full  flex items-center">
+          <BackButton setHeaderState={setHeaderState} className='text-3xl lg:hidden mr-1 text-grat-black font-extrabold'/>
           <InputField/>
         </div>}
-        <div className='hidden md:block w-full lg:hidden xl:block'>
+        <div className='hidden w-full xl:block'>
           <InputField/>
         </div>
        <div className='flex items-center'>
@@ -77,6 +77,11 @@ export default function Header(){
             <Link href={"/user/profile"}><span className='font-semibold base-text text-sm '>John Smith</span></Link>
             <div className='ml-2 h-[16px] w-[16px]'><GratImg src={homeResource.Dropdown}/></div>
           </div>
+      </div>
+      <div className='hidden md:flex ml-auto lg:hidden pr-4 items-center'>
+      {!headerState.isSearching && <SearchButton setHeaderState={setHeaderState} className=' h-[32px]  w-[32px]'/>}
+        <ToggleButton md={true} isActive={headerState.navActive} onClick={handleClick} />
+
       </div>
     </div>
     </>

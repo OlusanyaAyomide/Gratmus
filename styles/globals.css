@@ -70,6 +70,9 @@
 .profile-text{
   @apply  block text-xl -mt-[48.75px] text-center md:text-2xl font-semibold text-grat-black font-sarabun
 }
+.light-border{
+  @apply border-grat-light-text/10  border rounded-[6px] 
+}
 @tailwind utilities;
 
 

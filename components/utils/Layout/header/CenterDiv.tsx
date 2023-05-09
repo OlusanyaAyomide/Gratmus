@@ -20,8 +20,8 @@ export interface centerDivInterface{
 export default function CenterDiv({isSearching,setHeaderState,isActive,onClick}:centerDivInterface) {
   const router = useRouter()
   return (
-    <div className='h-full mt-[12px] items-center  w-fit flex-1 justify-around hidden md:flex px-6 md:px-2 lg:px-16 xl:px-12 item-center relative'>
-    {NavLinks.map((item,key)=>{
+    <div className={`h-full ${isSearching?"lg:h-[48.3px]":""} mt-[12px] items-center  w-fit flex-1 justify-around hidden md:flex px-6 md:px-2 lg:px-2 xl:px-12 item-center relative`}>
+    {!isSearching && NavLinks.map((item,key)=>{
       const isActive = router.asPath === item.link
 
       return(
@@ -35,8 +35,8 @@ export default function CenterDiv({isSearching,setHeaderState,isActive,onClick}:
        </Link>
       )
       
-    })}
-      <span className='hidden md:block lg:hidden'><ToggleButton isActive={isActive} onClick={onClick} md={true}/></span>
+    })} 
+      <span className='hidden md:block lg:hidden'><ToggleButton isActive={isActive} onClick={onClick} md={false}/></span>
       {!isSearching && <SearchButton setHeaderState={setHeaderState} className='hidden lg:block xl:hidden h-[28px] -mr-2 w-[28px]'/>}
     {isSearching && <div className='hidden  lg:flex xl:hidden  items-center relative'>
       <BackButton setHeaderState={setHeaderState}/>

@@ -18,7 +18,7 @@ export default function ProfileHeader() {
       <div className='flex flex-wrap mt-6 mx-4 justify-center border-b border-grat-gray pb-3'>
         {tags.map((item,key)=>{
           return(
-            <button key={key} className='py-[2px] whitespace-nowrap ml-[4px] mb-2 text-sm px-[6px] bg-grat-gray rounded-[6px]'>{item}</button>
+            <button key={key} className='py-1 whitespace-nowrap ml-[4px] mb-2 text-sm px-[6px] bg-grat-light-gray rounded-[6px]'>{item}</button>
           )
         })}
       </div>
