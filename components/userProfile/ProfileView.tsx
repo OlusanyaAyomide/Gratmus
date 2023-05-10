@@ -6,6 +6,7 @@ import { PersonList } from '@/utils/Homek'
 import GratImg from '../utils/GratImg'
 import GratButton from '../utils/GratButton'
 import { CompanyExporter } from '@/public/company/CompanyExporter'
+import StartedSection from '../utils/StartedSection'
 
 export default function ProfileView() {
   const [copied,setCopied] = useState(false)
@@ -49,11 +50,7 @@ export default function ProfileView() {
       <div className='w-full max-w-[300px]'>
       <GratImg src={CompanyExporter.Dancing}/>
       </div>
-      <div>
-        <p className="text-center font-semibold text-grat-orange text-lg">Looking for new job ?</p>
-        <p className='mt-5 mb-8'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi!</p>
-        <button className="block rounded-md  text-grat-orange text-white py-2 w-full">Start Browsing</button>
-      </div>
+      <StartedSection headerText='Looking for new job ?' ptext='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi!' buttonText='Start Browsing'/>
     </div>
     </section>
 
