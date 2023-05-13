@@ -57,3 +57,30 @@ export const canditatListings=[
         ]
     } 
 ]
+
+export const profileSections=[
+    { 
+      section:"information",
+      text:"General Information"
+    },
+    {
+      section:"about",
+      text:"About"
+    },
+    {
+      text:"Working Expeience",
+      section:"experience"
+    },
+    {
+      section:"skills",
+      text:"Skills"
+    },
+    {
+      section:"education",
+      text:"Education"
+    }
+  ]
+
+export const InitialSkillset =[
+    "Ux Deigner","Product Designer","Ux leads",    "Uxs Deigner","Product Designers","Ux lead"
+]

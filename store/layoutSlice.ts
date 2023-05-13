@@ -6,12 +6,31 @@ export interface layoutInterface{
     homePage:number
     profileVisible:boolean
     isPosting:boolean
+    profileToggle:{
+        information:boolean,
+        about:boolean,
+        experience:boolean
+        education:boolean
+        skills:boolean
+    }
 }
 
 const initialState:layoutInterface={
     homePage:1,
     profileVisible:false,
-    isPosting:false
+    isPosting:false,
+    profileToggle:{
+        information:false,
+        about:false,
+        experience:false,
+        education:false,
+        skills:false
+
+    }
+}
+
+interface ToggleProfile{
+    section: "information" | "about" | "experience" | "education" | "skills"
 }
 
 export const layoutSlice=createSlice({
@@ -26,7 +45,9 @@ export const layoutSlice=createSlice({
     //    },
        setIsPosting(state,action:PayloadAction<boolean>){
         state.isPosting = action.payload
-   
+       },
+       setProfilePage(state,action:PayloadAction<ToggleProfile>){
+            state.profileToggle[action.payload.section] = ! state.profileToggle[action.payload.section] 
        }
     }  
 })

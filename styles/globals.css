@@ -9,7 +9,7 @@
 }
 
 .cont{
-  @apply px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16
+  @apply px-3 xs:px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16
 }
 .my-filter{
   backdrop-filter:blur(2px);

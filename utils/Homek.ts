@@ -18,7 +18,7 @@ export const NavLinks=[
     {  
         name:"Groups",
         image:homeResource.Users,
-        link:"/avatar"
+        link:"/candidate/listing"
     },
     {
         name:"Cart",
@@ -454,6 +454,8 @@ export const ProfileSkillSet =[
     {text:"User Inerface Design",experience:"5 Years",Endorsement:false},
 
 ]
+
+
 
 
 

@@ -41,7 +41,6 @@ export default function Uploader() {
                 <h1 className='text-center mb-3'>OR</h1>
                 <div className='mx-auto flex flex-col items-center'>
                   <GratButton onClick={()=>{
-                    console.log("heree")
                     ref.current?.click()
                   }} text='Browse files'/>
                   <input ref={ref} onChange={handleFileChange} type='file'  className='hidden'/>
@@ -51,7 +50,7 @@ export default function Uploader() {
             }
             {imagePath && <Image src={typeof imagePath === 'string' ? imagePath : imagePath.src} alt='' className='w-auto mx-auto h-auto' width={400} height={400}/>}
             {imagePath &&  
-            <BidButon  text='"Change File'/>     
+            <BidButon onClick={()=>{ref.current?.click()}} text='Change File' className='block mx-auto'/>     
          }
           <input ref={ref2} onChange={handleFileChange} type='file' className='hidden'/>
           </div>
