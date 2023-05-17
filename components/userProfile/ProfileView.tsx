@@ -30,7 +30,7 @@ export default function ProfileView() {
           <CopyToClipboard text={text}>
           <button onClick={handlToggle} className={`text-xl ml-4 ${copied?"text-green-400":""}`}>{!copied?<BsFillClipboardFill/>:<BsClipboardCheck/>}</button>
           </CopyToClipboard>
-          {copied && <p className='absolute  -bottom-4 text-sm rounded-[4px] text-white bg-green-400 mx-3 w-[120%] overflow-hidden whitespace-nowrap'>Copied</p>}
+          {copied && <p className='absolute pl-4 -bottom-4 text-sm rounded-[4px] text-white bg-green-400 mx-3 w-[120%] overflow-hidden whitespace-nowrap'>Copied</p>}
         </div>
         <span className="mt-4 block font-semibold text-grat-thick">Connect</span>
         <div className='flex items-center px-1'>
