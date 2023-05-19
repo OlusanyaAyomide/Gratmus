@@ -46,10 +46,15 @@ export default function BottomScroll({setpostStatus,postStatus}:PostedInterface)
         <Buttons text="Camera" onClick={()=>{
           setpostStatus((prev=>{return{...basestate,photos:true}}))
         }} className='border-[#47A6F0]' icon={<BsCameraFill/>}/>
+
         <Buttons onClick={()=>{
           setpostStatus((prev=>{return{...basestate,videos:true}}))
         }} text="Video/Reel" className='border-grat-green' icon={<FaVideo/>}/>
-        <Buttons text="Live Event" className='border-[#EF3E45]' icon={<RiLiveFill/>}/>
+
+        <Buttons onClick={()=>{
+          setpostStatus((prev=>{return{...basestate,live:true}}))
+        }}  text="Live Event" className='border-[#EF3E45]' icon={<RiLiveFill/>}/>
+        
         <Buttons text="Trending" className='border-grat-green' icon={<HiHashtag/>}/>
         <Buttons onClick={handleScroll} text={isScrolled?"Back":"More"} className={`border-[#9659E9] transition-all duration-300 ${isScrolled?"rotate-180":""}`} icon={<BiArrowToRight/>}/>
         <Buttons text="Presentation" className='border-[#47A6F0]'

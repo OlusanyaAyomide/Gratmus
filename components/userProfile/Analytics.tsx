@@ -13,7 +13,7 @@ export default function Analytics() {
         </div>
           {AnalyticsData.map((item,key)=>{
             return(
-              <div className=' sm:mx-2'>
+              <div className=' sm:mx-2' key={key}>
                   <div key={key} className='light-border w-[145px] sm:w-[173px] px-3 py-6'>
                 <div className='w-[24px] h-[24px] mb-3'>
                   <GratImg src={item.image}/>

@@ -12,6 +12,7 @@ import ReactPlayer from 'react-player'
 export default function VideoPop({postStatus,setpostStatus}:PostedInterface) {
   const ref = useRef<HTMLInputElement>(null)
   const [videoURL, setVideoURL] = useState<string | null>(null)
+  console.log(videoURL)
   const handleFileChange = (event:React.ChangeEvent<HTMLInputElement>)=>{
     const file = event.target.files?.[0];
     const videoURL = file?URL.createObjectURL(file):null;
@@ -38,7 +39,7 @@ export default function VideoPop({postStatus,setpostStatus}:PostedInterface) {
            </p>
         </div>
         </div>
-        {videoURL && <ReactPlayer  url={videoURL} height={180} width={"100%"} controls={false} playing={true}/>}
+        {videoURL && <ReactPlayer  url={videoURL} height={180} width={"100%"}  style={{objectFit:"cover"}} controls={true} playing={true}/>}
         <textarea className='h-[140px] mt-4 w-full outline-none resize-none px-2' placeholder='Say something about video'>
         </textarea>
         {!postStatus.videos && <BottomScroll postStatus={postStatus} setpostStatus={setpostStatus}/>}
