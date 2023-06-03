@@ -39,9 +39,10 @@ import Profile3 from "./Post3.png";
 import Profil4 from "./Profile4.png";
 import AudioTemp from "./AudioTemp.png";
 import ArrowUp from "./ArrowUp.png";
+import uploader from "./Uploader.png"
 
 
 
 export const homeResource={
-    Avatar,Cart,Chat,Circles,Job,Mike,Notification,Screen,Search,Videos,Home,Users,Dropdown,Person1,Person2,Person3,Person4,Person5,More,Add,TopAvatar,ScreenCast,Calendar,Cart2,video2,Avatar1,Post1,Comments,MinComment,React,Discuss,Share,CheckMark,PlusSquare,Profile2,Post2,VideoTemp,Profile3,Profil4,AudioTemp,ArrowUp
+    Avatar,Cart,Chat,Circles,Job,Mike,Notification,Screen,Search,Videos,Home,Users,Dropdown,Person1,Person2,Person3,Person4,Person5,More,Add,TopAvatar,ScreenCast,Calendar,Cart2,video2,Avatar1,Post1,Comments,MinComment,React,Discuss,Share,CheckMark,PlusSquare,Profile2,Post2,VideoTemp,Profile3,Profil4,AudioTemp,ArrowUp,uploader
 }

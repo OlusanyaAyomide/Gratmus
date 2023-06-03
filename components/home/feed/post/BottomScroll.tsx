@@ -7,7 +7,7 @@ import {BiArrowToRight} from "react-icons/bi"
 import {MdLibraryMusic} from "react-icons/md"
 import { basestate, postInterface } from './CreatePost'
 
-interface ButtonInterfcae{
+export interface ButtonInterfcae{
   className:string
   icon:JSX.Element
   text:string
@@ -28,23 +28,26 @@ export default function BottomScroll({setpostStatus,postStatus}:PostedInterface)
     setIsScrolled((prev=>!prev))
   }
   const Buttons=({className,icon,text,onClick}:ButtonInterfcae)=>{
-    return<div className='w-[20%]  sm:pr-4'>
-      <div className=' min-w-[90px]  sm:w-[100px] bg-transparent rounded-md px-1 flex justify-center items-center h-[60px] sm:h-[70px] cursor-pointer'>
-        <div onClick={onClick} className='curosor-pointer  bg-grat-white h-[60px] rounded-md sm:h-[70px] px-2 sm:px-4 flex items-center justify-center'>
+    return<div className='w-[25%]'>
+      <div className='w-fit mx-auto flex-col items-center'>
+        <div className='  bg-transparent rounded-md px-1 flex justify-center items-center h-[60px] sm:h-[70px] cursor-pointer'>
+        <div onClick={onClick} className='curosor-pointer min-w-[70px]  bg-grat-white h-[75px] rounded-md sm:h-[70px] px-2 sm:px-4 flex items-center justify-center'>
           <button className={`p-2 rounded-full border-[3px] ${className}`}>
            <span className='text-xl sm:text-2xl'>{icon}</span>
         </button>
       </div>
       </div>
-      <h1 className="text-[11px] mt-2 flex whitespace-nowrap text-xs  justify-center text-center">{text}</h1>
+          <h1 className="text-[11px] mt-2 flex whitespace-nowrap text-xs  justify-center text-center">{text}</h1>
+      </div>
+
    </div> 
     
   }
   return (
     <div className='overflow-hidden '>
-      <div ref={ref} className='flex overflow-auto pop-scroll explore  mt-8' >
+      <div ref={ref} className='flex justify-between pop-scroll explore  mt-8' >
         <Buttons text="Camera" onClick={()=>{
-          setpostStatus((prev=>{return{...basestate,photos:true}}))
+          setpostStatus((prev=>{return{...basestate,phovidaud:true}}))
         }} className='border-[#47A6F0]' icon={<BsCameraFill/>}/>
 
         <Buttons onClick={()=>{
@@ -56,11 +59,11 @@ export default function BottomScroll({setpostStatus,postStatus}:PostedInterface)
         }}  text="Live Event" className='border-[#EF3E45]' icon={<RiLiveFill/>}/>
         
         <Buttons text="Trending" className='border-grat-green' icon={<HiHashtag/>}/>
-        <Buttons onClick={handleScroll} text={isScrolled?"Back":"More"} className={`border-[#9659E9] transition-all duration-300 ${isScrolled?"rotate-180":""}`} icon={<BiArrowToRight/>}/>
+        {/* <Buttons onClick={handleScroll} text={isScrolled?"Back":"More"} className={`border-[#9659E9] transition-all duration-300 ${isScrolled?"rotate-180":""}`} icon={<BiArrowToRight/>}/>
         <Buttons text="Presentation" className='border-[#47A6F0]'
           icon={<HiOutlinePresentationChartLine/>}/>
         <Buttons text="Post Market" className='border-grat-green' icon={<BsCartDashFill/>}/>
-        <Buttons text="Post Song" className='border-[#EF3E45]' icon={<MdLibraryMusic/>}/>
+        <Buttons text="Post Song" className='border-[#EF3E45]' icon={<MdLibraryMusic/>}/> */}
     </div>
     </div   >
 

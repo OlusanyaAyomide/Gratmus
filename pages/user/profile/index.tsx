@@ -3,7 +3,7 @@ import ProfileView from '@/components/userProfile/ProfileView'
 import Layout from '@/components/utils/Layout/Layout'
 import React, { useState } from 'react'
 
-export default function index() {
+export default function Profile() {
   const [page,setPage] = useState(1)
   return (
     <Layout>

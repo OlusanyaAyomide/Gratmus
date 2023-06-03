@@ -24,7 +24,7 @@ export default function VideoPop({postStatus,setpostStatus}:PostedInterface) {
           URL.revokeObjectURL(videoURL)
       }
     }
-  },[])
+  },[videoURL])
   return (
     <div>
       {!videoURL && <span className="block text-2xl mb-2 font-bold">Upload Video</span>}

@@ -6,6 +6,7 @@ export interface layoutInterface{
     homePage:number
     profileVisible:boolean
     isPosting:boolean
+    postText:string
     profileToggle:{
         information:boolean,
         about:boolean,
@@ -17,6 +18,7 @@ export interface layoutInterface{
 
 const initialState:layoutInterface={
     homePage:1,
+    postText:"",
     profileVisible:false,
     isPosting:false,
     profileToggle:{
@@ -48,6 +50,9 @@ export const layoutSlice=createSlice({
        },
        setProfilePage(state,action:PayloadAction<ToggleProfile>){
             state.profileToggle[action.payload.section] = ! state.profileToggle[action.payload.section] 
+       },
+       setPostText(state,action:PayloadAction<string>){
+        state.postText = action.payload
        }
     }  
 })

@@ -22,7 +22,7 @@ export default function Video(item:PostInterface) {
      setIsPlaying(false)
     }
 
-  },[inView])
+  },[inView,isMounted])
   return (
     <div className='overflow-hidden mx-2 mt-3 rounded-sm h-[210px] lg:h-[340px] xl:[320px] md:h-[300px] sm:h-[330px]' ref={ref}>
       {isMounted && <ReactPlayer playing={isPlaying} controls={isPlaying} url={"/home/Preview.mp4"} style={{height:"100%",width:"100%",objectFit:"cover"}}/>}

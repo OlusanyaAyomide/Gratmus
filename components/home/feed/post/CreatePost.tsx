@@ -8,13 +8,13 @@ import VideoPop from './VideoPop'
 import LiveEvent from './LiveEvent'
 export interface postInterface{
   isSearching:boolean
-  photos:boolean
+  phovidaud:boolean
   videos:boolean
   live:boolean
 }
 export const basestate:postInterface={
   isSearching:false,
-  photos:false,
+  phovidaud:false,
   videos:false,
   live:false
 }

@@ -8,7 +8,7 @@ import StartedSection from '../utils/StartedSection'
 export default function Results() {
   return (
     <div>
-      <h1 className='font-semibold text-sm md:text-base'>32 results for <span className='text-grat-green'>'Designers'</span></h1>
+      <h1 className='font-semibold text-sm md:text-base'>32 results for <span className='text-grat-green'>Designers</span></h1>
       <div>
         {canditatListings.map((item,key)=>{
           return(

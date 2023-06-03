@@ -39,13 +39,13 @@ export default function PostComment(item:PostInterface) {
          </div>
          <div>
           <div className='hidden  sm:flex  items-center'>
-          {isOrganization && <BidButon/>}
+          {isOrganization && <BidButon text='demo'/>}
            <div className=' overflow-hidden h-[20px] w-[20px] rounded-full bg-grat-profile-green '>{<GratImg src={item.profile}/>}</div>
           </div>
          </div>
          {isOrganization &&
           <div className='w-full flex justify-center sm:hidden mt-2 mx-auto'>
-            <BidButon/>
+            <BidButon text='demo'/>
           </div>}
       </div>
       <div className='border mt-8 rounded-lg border-grat-light-gray p-5 mb-4'>

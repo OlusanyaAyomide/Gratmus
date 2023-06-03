@@ -7,23 +7,35 @@ import { basestate } from './CreatePost'
 import BidButon from '@/components/utils/BidButon'
 import BottomScroll from './BottomScroll'
 import Image,{ StaticImageData } from 'next/image'
+import { useAppDispatch, useAppSelector } from '@/hooks/reduxhooks'
+import { layOutActions } from '@/store/layoutSlice'
+import ChangeInterest from './ChangeInterest'
 
 
+interface ResourcePath{
+  type:"image"|"audio"|"video"| null
+  path:string | null
+}
 export default function BasePop({postStatus,setpostStatus}:PostedInterface) {
   const ref = useRef<HTMLInputElement>(null)
   const [imagePath,setImagePath] = useState<string |StaticImageData|null>(null)
+  const {postText} = useAppSelector((state=>state.layout))
+  const dispatch = useAppDispatch()
+  const [resourcePath,setResourcePath] = useState<ResourcePath>({type:null,path:null})
   const handleFileChange = (e:React.ChangeEvent<HTMLInputElement>)=>{
     const file = e.target.files?.[0]
     if (file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        setImagePath({
-          src: reader.result as string,
-          width: 0,
-          height: 0,
-        });
-      };
-      reader.readAsDataURL(file);
+      const fileType = file.type.split('/')[0]
+      console.log(fileType)
+      // const reader = new FileReader();
+      // reader.onload = () => {
+      //   setImagePath({
+      //     src: reader.result as string,
+      //     width: 0,
+      //     height: 0,
+      //   });
+      // };
+      // reader.readAsDataURL(file);
     }
   }
   return (
@@ -45,21 +57,38 @@ export default function BasePop({postStatus,setpostStatus}:PostedInterface) {
        className='w-auto mx-auto h-auto' 
        width={400} height={400}/>
         </div>}
-      <textarea onFocus={()=>{
-          setpostStatus((prev=>{return{...basestate,photos:true}}))
-          }} className={`mt-4 w-full outline-none resize-none px-2 ${postStatus.photos?"h-[140px]":imagePath?"h-[100px]":"h-[40px]"}`} placeholder='John what would you like to talk about ?'>
+
+        <button className="text-grat-green ml-2 mt-6 block font-extrabold text-sm">#Hashtag</button>
+
+        {!postStatus.phovidaud &&  <textarea  value={postText} onChange={(e)=>{dispatch(layOutActions.setPostText(e.target.value))} }className={`mt-4 w-full outline-none resize-none px-2 h-[40px]`} placeholder='John what would you like to talk about ?'>
+        </textarea>}
+
+         {postStatus.phovidaud && <div>
+        <div className='mt-2 mx-2 rounded-md border border-grat-gray/50 py-16'>
+        <div className='h-[38px] w-[44px] sm:h-[44px] sm:w-[64px] mx-auto'>
+          <GratImg src={homeResource.uploader}/>
+        </div>
+         <div>
+            <span className="block text-grat-gray text-center">Add photo,Audio,View</span>
+            <span className='block text-grat-gray text-center mt-1'>or drag and drop</span>
+         </div>
+        </div>
+        
+         <textarea  value={postText} onChange={(e)=>{dispatch(layOutActions.setPostText(e.target.value))} }className={`mt-4 w-full outline-none resize-none px-2 h-[40px]`} placeholder='John what would you like to talk about ?'>
         </textarea>
-      <span className="text-grat-green ml-2 mt-4 font-extrabold text-sm">#Hashtag</span>
-      <span className='text-sm block mt-2'>Your interest</span>
-      {!postStatus.photos && <BottomScroll postStatus={postStatus} setpostStatus={setpostStatus}/>}
-      {postStatus.photos &&  <div className='flex mt-4 justify-end items-center'>
+        </div>}
+    
+
+      {postStatus.phovidaud && <ChangeInterest/>}
+      {!postStatus.phovidaud && <BottomScroll postStatus={postStatus} setpostStatus={setpostStatus}/>}
+      {postStatus.phovidaud &&  <div className='flex mt-4 justify-end items-center'>
         <button className='text-base px-2 mr-2 text-grat-light-text' onClick={()=>{
           setImagePath(null)
           setpostStatus((prev=>{return{...basestate,photos:false};
            }))
         }}>Cancel</button>
-         <input accept="image/*"  type="file" ref={ref} onChange={handleFileChange} className='hidden' />
-        <BidButon onClick={()=>{ref.current?.click()}} text='Upload Image' className='px-4'/>
+         <input accept="audio/*,video/*,image/*"  type="file" ref={ref} onChange={handleFileChange} className='hidden' />
+        <BidButon onClick={()=>{ref.current?.click()}} text='Upload' className='px-4'/>
       </div>}    
     </div>
   )

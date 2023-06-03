@@ -22,7 +22,7 @@ export default function ToggleButton({md=false,onClick,isActive}:ToggleInterface
     else{
       control.start("animateback")}
       
-  },[isActive])
+  },[isActive,control])
 
   return (
     <button className={`flex ${md?"lg:hidden":"md:hidden"} ml-6 flex-col justify-between h-[20px] w-[24px] cursor-pointer`} onClick={handleChange}>
